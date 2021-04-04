@@ -23,3 +23,11 @@ def the_dojo_way():
             print(i)
 
 the_dojo_way()
+
+#Whoa. That Sucker's Huge: Add odd integers from 0 to 500,000 and print the final sum. 
+def whoa():
+    final_sum = 0
+    for i in range(1, 500000, 2):
+        final_sum += i
+    print(final_sum)
+whoa()
