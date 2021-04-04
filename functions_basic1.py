@@ -20,13 +20,13 @@ def a():
     print(10)
 print(a())
 
-#5: output prediction: 5
+#5: output prediction: 5, ?
 def a():
     print(5)
 x = a()
 print(x)
 
-#6: output prediction: 3, 5, 8
+#6: output prediction: 3, 5, undefined
 def a(b,c):
     print(b+c)
 print(a(1,2) + a(2,3))
