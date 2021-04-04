@@ -30,4 +30,13 @@ def whoa():
     for i in range(1, 500000, 2):
         final_sum += i
     print(final_sum)
+
 whoa()
+
+#Countdown by Fours: Print positive numbers starting at 2018, counting down by fours. 
+def countdown_by_fours():
+    for i in range(2018, 0, -4):
+        print(i)
+
+countdown_by_fours()
+
