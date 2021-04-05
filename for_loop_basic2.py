@@ -11,6 +11,16 @@ print(biggie_size([-1, 3, 5, -5]))
 #(Note that zero is not considered to be a positive number).
 #Example: count_positives([-1,1,1,1]) changes the original list to [-1,1,1,3] and returns it
 #Example: count_positives([1,6,-4,-2,-7,-2]) changes the list to [1,6,-4,-2,-7,2] and returns it
+def count_positives(lst):
+    count = 0
+    for val in lst:
+        if val > 0:
+            count += 1
+    lst[len(lst) - 1] = count
+    return lst
+
+print(count_positives([-1, 1, 1, 1]))
+print(count_positives([1, 6, -4, -2, -7, -2]))
 
 #3. Sum Total - Create a function that takes a list and returns the sum of all the values in the array.
 #Example: sum_total([1,2,3,4]) should return 10
