@@ -1,5 +1,11 @@
 #1. Biggie Size: Given a list, write a function that changes all positive numbers in the list to "big."
 #Example: biggie_size([-1, 3, 5, -5]) returns that same list, but whose values are now [-1, "big", "big", -5]. 
+def biggie_size(lst):
+    for i in range(len(lst)):
+        if lst[i] > 0:
+            lst[i] = "big"
+    return lst
+print(biggie_size([-1, 3, 5, -5]))            
 
 #2. Count Positives - Given a list of numbers, create a function to replace the last value with the number of positive values. 
 #(Note that zero is not considered to be a positive number).
