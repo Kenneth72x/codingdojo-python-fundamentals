@@ -25,6 +25,14 @@ print(count_positives([1, 6, -4, -2, -7, -2]))
 #3. Sum Total - Create a function that takes a list and returns the sum of all the values in the array.
 #Example: sum_total([1,2,3,4]) should return 10
 #Example: sum_total([6,3,-2]) should return 7
+def sum_total(lst):
+    total = 0
+    for val in lst:
+        total += val
+    return total
+
+print(sum_total([1, 2, 3, 4]))
+print(sum_total([6, 3, -2]))
 
 #4. Average - Create a function that takes a list and returns the average of all the values.
 #Example: average([1,2,3,4]) should return 2.5
