@@ -40,3 +40,16 @@ def values_greater_than_second(orig_list):
     return new_list  
 
 print(values_greater_than_second([5,2,3,2,1,4]))
+
+#This Length, That Value: Write a function that accepts two integers as parameters: size and value. The function should
+#create and return a list whose length is equal to the given size, and whose values are all the given value. 
+#Example: length_and_value(4,7) should return [7,7,7,7]
+#Example: length_and_value(6,2) should return [2,2,2,2,2,2,]
+def length_and_value(size, value):
+    new_list = []
+    for num_times in range(size):
+        new_list.append(value)
+    return new_list
+print(length_and_value(4,7))
+print(length_and_value(6,2))
+        
