@@ -39,4 +39,6 @@ jonathon.make_withdrawal(25)
 jonathon.make_withdrawal(25)
 jonathon.display_user_balance()
 
-
+kenneth.transfer_money(jonathon,275000)
+kenneth.display_user_balance()
+jonathon.display_user_balance()
